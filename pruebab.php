@@ -5,13 +5,26 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 
-$aAuto = array();
-$aAuto["color"] = array ("negro", "verde");
-$aAuto["marca"] = "ford"
-$aAuto["anio"] = 1908;
-$aAuto["precio"] = 800;
+$aProductos = array();
+$aProductos[] = array("nombre" => "Smart tv 55\" 4K UHD",
+        "marca" => "Hitachi",
+        "modelo" => "554KS20",
+        "stock" => 60,
+        "precio" => 58000,
+);
+$aProductos[] = array("nombre" => "Samsung Galaxy A30 Blanco",
+        "marca" => "Samsung",
+        "modelo" => "Galaxi A30",
+        "stock" => 0,
+        "precio" => 22000,
+);
+$aProductos[] = array("nombre" => "Aire Acondicionado Split Inverter Frio/Calor Surrey 2900F",
+        "marca" => "Surrey",
+        "modelo" => "553AIQ1201E",
+        "stock" => 5,
+        "precio" => 45000,
+);
 
-echo $aAuto["color"],[0];
-print_r($aAuto);
-
+//print_r($aProductos);
+echo $aproductos[stock]
 ?>

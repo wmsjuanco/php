@@ -5,10 +5,15 @@ date_default_timezone_set("America/Argentina/buenos_aires");
 $nombre = "nelson daniel tarche";
 $edad = 34;
 //$aPeliculas = array ("volver al futuro", "titanic", "el dia despues de mañana");
-$aPeliculas = ["volver al futuro", "titanic", "el dia despues de mañana"]; /* otra forma*/ 
+$aPeliculas = ["volver al futuro", "titanic", "el dia despues de mañana"]; /* otra forma*/
 // print_r($aPeliculas [0]  ); /* esto para que imprima en pantalla script solicitada*/
 // var_dump($aPeliculas);  /* esto es para que imprima todo el array*/
-print_r($aPeliculas [1]);
+$aAuto = array();
+$aAuto["color"] = array ("negro", "verde");
+$aAuto["marca"] = "ford";
+$aAuto["anio"] = 1908;
+$aAuto["precio"] = 800;
+
 ?>
 
 <!DOCTYPE html>
@@ -43,22 +48,23 @@ print_r($aPeliculas [1]);
                     <tr>
                         <th>Nombre y apellido: </th>
                         <td>
-                            <?php echo $nombre;?>
+                            <?php echo $nombre; ?>
                         </td>
                     </tr>
                     <tr>
                         <th>Edad</th>
                         <td>
-                        <?php echo $edad;?>
+                            <?php echo "El auto " . $aAuto["marca"] . " del año " . $aAuto["anio"] . " es de color " . $aAuto["color"][0] . " y su precio es de " . $aAuto["precio"]; ?>
+                            <?php echo $edad; ?>
                         </td>
                     </tr>
                     <tr>
                         <th>Peliculas favoritas</th>
                         <td>
-                        <?php echo $aPeliculas[0]; ?><br>
-                        <?php echo $aPeliculas[1]; ?><br>
-                        <?php echo $aPeliculas[2]; ?>
-                            
+                            <?php echo $aPeliculas[0]; ?><br>
+                            <?php echo $aPeliculas[1]; ?><br>
+                            <?php echo $aPeliculas[2]; ?>
+
                         </td>
                     </tr>
                 </table>
