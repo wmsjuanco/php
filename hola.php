@@ -11,5 +11,6 @@
         echo "hola mundo<br>"; /*el BR es para darle un salto de linea*/ 
         echo date("d/m/Y");
     ?>
+    
 </body>
 </html>

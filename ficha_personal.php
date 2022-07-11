@@ -4,11 +4,11 @@ date_default_timezone_set("America/Argentina/buenos_aires");
 // 
 $nombre = "nelson daniel tarche";
 $edad = 34;
-$aPeliculas = array ("volver al futuro", "titanic", "el dia despues de mañana");
-
+//$aPeliculas = array ("volver al futuro", "titanic", "el dia despues de mañana");
+$aPeliculas = ["volver al futuro", "titanic", "el dia despues de mañana"]; /* otra forma*/ 
 // print_r($aPeliculas [0]  ); /* esto para que imprima en pantalla script solicitada*/
 // var_dump($aPeliculas);  /* esto es para que imprima todo el array*/
-
+print_r($aPeliculas [1]);
 ?>
 
 <!DOCTYPE html>
