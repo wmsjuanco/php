@@ -13,7 +13,7 @@ $aAuto["color"] = array ("negro", "verde");
 $aAuto["marca"] = "ford";
 $aAuto["anio"] = 1908;
 $aAuto["precio"] = 800;
-
+print_r($aAuto["color"]);
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +48,8 @@ $aAuto["precio"] = 800;
                     <tr>
                         <th>Nombre y apellido: </th>
                         <td>
-                            <?php echo $nombre; ?>
+                           
+                             <?php echo $edad; ?>
                         </td>
                     </tr>
                     <tr>
